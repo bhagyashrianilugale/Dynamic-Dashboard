@@ -24,7 +24,7 @@ Follow these steps to set up and run Dynamic-Dashboard-app locally:
  ```javascript
     git clone https://github.com/bhagyashrianilugale/Dynamic-Dashboard.git
  ```
-2. Go to thepProject directory:
+2. Go to the project directory:
  ```javascript
     cd Dynamic-Dashboard
  ```
