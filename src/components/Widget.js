@@ -18,7 +18,7 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
                 {searchText?.length > 1 
                    ? null 
                    : <RxCross2 
-                   className='text-4xl p-2 font-extrabold mt-2 cursor-pointer mx-60' 
+                   className='text-4xl p-2 font-extrabold mt-2 cursor-pointer mx-50' 
                    onClick={()=> dispatch(removeWidget({category: categoryName, widgetName: widgetName}))}
                   />}
 
