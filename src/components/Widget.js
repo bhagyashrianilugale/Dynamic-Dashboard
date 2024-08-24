@@ -11,7 +11,8 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
 
   return (
     <>
-      <div className='p-4 bg-widgetBackgraundWhite rounded-2xl shadow-sm widget_container'>
+      <div className='p-8 bg-widgetBackgraundWhite rounded-2xl z-40 shadow-sm widget_container 
+                      flex justify-center items-center flex-col'>
           <div className='widget rounded-xl'>
                {searchText?.length > 1 
                    ? null 

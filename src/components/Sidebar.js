@@ -51,7 +51,7 @@ const Sidebar = () => {
                                       key={category} 
                                       className='text-center font-semibold mt-6 text-gray-600'>
                                        <button 
-                                            className={`pb-2 px-6 text-xs ${activeCategory === category ? 'border-b-4 border-buttonBlue text-buttonBlue' : ''}`}
+                                            className={`pb-2 px-6 text-xs ${activeCategory == category ? 'border-b-4 border-buttonBlue text-buttonBlue' : ''}`}
                                             onClick={()=> setActiveCategory(category)}>
                                             {category}
                                        </button>

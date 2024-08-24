@@ -12,8 +12,10 @@ const Category = ({props}) => {
   
   return (
     <>
-      <div className='mt-0'>
-            <h1 className='text-sm font-bold mx-4 text-darkGrey'>{ categoryName }</h1>
+      <div> 
+            <div className='sticky'>
+                <h1 className='text-sm font-bold mx-4 z-50 text-darkGrey'>{ categoryName }</h1>
+            </div>
             <div className='flex w-full'>
 
                {/*Widget Container*/}
