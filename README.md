@@ -24,15 +24,19 @@ Follow these steps to set up and run Dynamic-Dashboard-app locally:
  ```javascript
     git clone https://github.com/bhagyashrianilugale/Dynamic-Dashboard.git
  ```
- 2. Install Dependencies:
+2. Go to thepProject directory:
+ ```javascript
+    cd Dynamic-Dashboard
+ ```
+ 3. Install Dependencies:
 ```javascript
    npm install
 ```
-3. Start the Development Server:
+4. Start the Development Server:
 ```javascript
    npm start
 ```
-4. Open in Your Browser: Open `http://localhost:1234` in your web browser.
+5. Open in Your Browser: Open `http://localhost:1234` in your web browser.
 
 ## Live Demo
    [ Live-URL](https://dynamic-dashboardbau.netlify.app/)
