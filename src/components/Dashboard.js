@@ -5,16 +5,21 @@ import Widget from './Widget';
 
 const Dashboard = () => {
 
-  // Subscribing to the store using a selector
+  // Selecting  categories from the Redux store
   const categories = useSelector((store) => store.widgets.categories);
-  const filterwidget = useSelector((store) => store.widgets.filterwidget);
+
+  // Selecting filteredwidget from the Redux store
+   const filteredwidget = useSelector((store) => store.widgets.filteredwidget);
+     
+  // Selecting searchText from the Redux store
   const searchText = useSelector((store)=>store.widgets.searchText);
 
   return (
-    <>
-      {(searchText?.length > 1 && filterwidget?.length > 0)
+    <> 
+      {/*Conditional rendering for filteredwidget */}
+      {(searchText?.length > 1 && filteredwidget?.length > 0)
             ? <div>{
-                    filterwidget?.map((widget)=>(
+                    filteredwidget?.map((widget)=>(
                                 <Widget 
                                   key={ widget.name } 
                                   widgetName={ widget.name} 

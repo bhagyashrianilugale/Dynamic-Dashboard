@@ -27,7 +27,7 @@ const widgetSlice = createSlice({
              }
         ],
       sidebarStatus : false,
-      filterwidget : null,
+      filteredwidget : null,
       searchText : ""
     },
     
@@ -53,12 +53,12 @@ const widgetSlice = createSlice({
             }
         },
 
-        filterwidgets : (state, action)=>{
+        filteredwidgets : (state, action)=>{
             const searchTerm = action.payload.toLowerCase();
             if( searchTerm.length>0 ){
                        state.searchText = searchTerm;
                       //Filterd widget
-                       state.filterwidget = state.categories?.flatMap((category)=>(
+                       state.filteredwidget = state.categories?.flatMap((category)=>(
                        category.widgets.filter((widget)=>widget.name.toLowerCase().includes(searchTerm))
             ))}else{
                  state.searchText.length=0;
@@ -76,5 +76,5 @@ const widgetSlice = createSlice({
 export const { addWidget, 
                removeWidget, 
                changeSideBarStatus, 
-               filterwidgets } = widgetSlice.actions;
+               filteredwidgets } = widgetSlice.actions;
 export default widgetSlice.reducer;

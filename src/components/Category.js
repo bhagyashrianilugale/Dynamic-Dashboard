@@ -12,7 +12,7 @@ const Category = ({props}) => {
   
   return (
     <>
-      <div className='relative'> 
+      <div className='relative'>
             <div>
                 <h1 className='text-sm font-bold mx-4 -top-2 text-darkGrey absolute z-20'>{ categoryName }</h1>
             </div>

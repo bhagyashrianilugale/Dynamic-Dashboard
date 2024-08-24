@@ -7,6 +7,8 @@ import { addWidget, changeSideBarStatus } from '../utils/widgetSlice';
 const Sidebar = () => {
  
   const dispatch = useDispatch();
+
+  // State to manage currently active category in the sidebar
   const [ activeCategory, setActiveCategory ] = useState('CSPM');
   const [error, setError] = useState('');
   const widget_name = useRef(null);
@@ -20,11 +22,11 @@ const Sidebar = () => {
                let widgetInfo = { category: activeCategory, 
                                   widget: {name: widget_name.current.value, text: widget_text.current.value}
                                 }
+               //Dispatch action to add widget to the redux store
                dispatch(addWidget(widgetInfo));
                widget_name.current.value =''; 
                widget_text.current.value ='';
            } catch(err){
-               console.log(err);
               setError(err.message);
            }
            } else{

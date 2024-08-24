@@ -6,6 +6,7 @@ import  graphImg  from '../assets/graphImg.jpg';
 
 const Widget = ({ widgetName, widgetText, categoryName }) => {
  
+   // Selecting searchText from the Redux store
   const searchText = useSelector((store) => store.widgets.searchText);
   const dispatch = useDispatch();
 
