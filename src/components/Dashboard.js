@@ -12,8 +12,7 @@ const Dashboard = () => {
 
   return (
     <>
-      {
-        (searchText?.length > 1 && filterwidget?.length > 0)
+      {(searchText?.length > 1 && filterwidget?.length > 0)
             ? <div>{
                     filterwidget?.map((widget)=>(
                                 <Widget 
@@ -31,7 +30,7 @@ const Dashboard = () => {
                  props={{ widgetInfo: c.widgets, categoryName: c.category }}
                />
             ))}
-      </div>
+        </div>
       }
     </>
   );
