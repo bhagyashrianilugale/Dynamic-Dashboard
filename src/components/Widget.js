@@ -12,9 +12,9 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
   return (
     <>
           <div
-              className='p-5 rounded-xl text-darkGrey border'>
+              className='p-5 rounded-xl text-darkGrey bg-gray-200 w-10/12'>
                <div 
-                className='h-60 w-4/15 m-auto rounded-xl bg-red-500'>
+                className='h-60 w-80 m-auto rounded-2xl bg-white shadow-md'>
                 {searchText?.length > 1 
                    ? null 
                    : <RxCross2 

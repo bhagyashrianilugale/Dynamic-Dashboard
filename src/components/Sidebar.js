@@ -34,8 +34,8 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className='fixed inset-0 bg-black bg-opacity-40  backdrop-brightness-90 z-40'></div>
-          <div className='fixed right-0 z-50 top-0 w-2/5 h-full bg-white shadow-lg flex flex-col'>
+      <div className='fixed inset-0 bg-black bg-opacity-40 backdrop-brightness-90 z-40'></div>
+          <div className='fixed right-0 z-50 top-0 w-5/12 h-full bg-white shadow-lg flex flex-col'>
                     <header className='bg-headerBlue h-13 text-white p-1 flex justify-between text-sm'>
                              <h3 className='text-center p-2'>Add widget</h3>
                              <RxCross2 className='text-2xl p-1 font-extrabold mt-2 cursor-pointer' 
@@ -63,6 +63,7 @@ const Sidebar = () => {
                                                 className='font-semibold text-darkGrey'>
                                                Widget Name :
                                           </label>
+                                          <br/> 
                                           <input type='text'
                                                  id='widgetname'
                                                  name='widgetname'
