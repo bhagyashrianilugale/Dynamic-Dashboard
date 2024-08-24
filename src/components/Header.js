@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
       <div className='h-12 flex justify-between'>
-          <div className='my-2 mx-12 text-lg'>
+          <div className='my-4 mx-12 text-sm'>
               <span className='text-neutral-400'>Home</span>
               <IoIosArrowForward className='inline text-neutral-400 mx-2'/>
               <span className='font-bold text-secondaryBlue'>Dashboard V2</span>

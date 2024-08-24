@@ -36,13 +36,13 @@ const Sidebar = () => {
     <>
       <div className='fixed inset-0 bg-black bg-opacity-40  backdrop-brightness-90 z-40'></div>
           <div className='fixed right-0 z-50 top-0 w-2/5 h-full bg-white shadow-lg flex flex-col'>
-                    <header className='bg-headerBlue h-16 text-white p-2 flex justify-between'>
-                             <h3 className='text-center p-4'>Add widget</h3>
-                             <RxCross2 className='text-4xl p-2 font-extrabold mt-2 cursor-pointer' 
+                    <header className='bg-headerBlue h-13 text-white p-1 flex justify-between text-sm'>
+                             <h3 className='text-center p-2'>Add widget</h3>
+                             <RxCross2 className='text-2xl p-1 font-extrabold mt-2 cursor-pointer' 
                                   onClick={()=>dispatch(changeSideBarStatus())}/>
                     </header>
                     <section className='p-4 flex flex-col flex-1 overflow-auto'>
-                            <p className='text-lg font-medium text-gray-700'>
+                            <p className='text-sm font-medium text-gray-700'>
                                       Personalise your dashboard by adding the following widget
                            </p>
                             <div className='flex space-x-4 border-b-2 w-[70%] border-gray-300 mb-4'>
@@ -51,14 +51,14 @@ const Sidebar = () => {
                                       key={category} 
                                       className='text-center font-semibold mt-6 text-gray-600'>
                                        <button 
-                                            className={`pb-2 px-6 text-lg ${activeCategory === category ? 'border-b-4 border-buttonBlue text-buttonBlue' : ''}`}
+                                            className={`pb-2 px-6 text-sm ${activeCategory === category ? 'border-b-4 border-buttonBlue text-buttonBlue' : ''}`}
                                             onClick={()=> setActiveCategory(category)}>
                                             {category}
                                        </button>
                                   </div>
                                ))}
                             </div>
-                             <div className='mb-2 border-2 p-2 rounded-md flex-1'>
+                             <div className='mb-2 border-2 p-2 rounded-md flex-1 text-sm'>
                                          <label htmlFor='widget_name'
                                                 className='font-semibold text-darkGrey'>
                                                Widget Name :
@@ -77,6 +77,7 @@ const Sidebar = () => {
                                                 className='font-semibold text-darkGrey'>
                                                Widget Text :
                                           </label>
+                                          <br/> 
                                           <input type='text'
                                                  id='widgettext' 
                                                  name='widgetext'
@@ -88,12 +89,12 @@ const Sidebar = () => {
                                      />
                                     {error.length ? <p className='font-semibold text-darkGrey'>{error}</p> : null}
                             </div>
-                            <div className='flex justify-end space-x-2 p-4 mt-auto font-medium'>
-                                  <button className='h-10 w-36 rounded-xl p-2 bg-white text-btncol border-2 bottom-0 border-btncol' 
+                            <div className='flex justify-end space-x-2 p-6 mt-auto font-medium'>
+                                  <button className='h-10 w-36 text-sm rounded-xl p-2 bg-white text-btncol border-2 border-btncol' 
                                           onClick={()=>dispatch(changeSideBarStatus())}>
                                           Cancel
                                   </button>
-                                  <button className='h-10 w-36 rounded-xl p-2 bg-buttonBlue text-white bottom-0' 
+                                  <button className='h-10 w-36 text-sm rounded-xl px-2 bg-buttonBlue text-white' 
                                           onClick={ confirmWidget }>
                                           Confirm
                                   </button>
