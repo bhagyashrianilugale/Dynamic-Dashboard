@@ -26,18 +26,18 @@ const Body = () => {
     <>
       <div className='relative h-full w-full bg-slate-100 p-10'>
            <div className='flex justify-between py-4 text-darkGrey'>
-                <h1 className='text-lg font-bold'>CNAPP Dashboard</h1>
+                <h1 className='text-sm font-bold'>CNAPP Dashboard</h1>
                  <div className='text-center text-lightGreyBlue'>
-                     <span className='h-1 w-4 mx-1 font-medium text-sm p-2 border bg-white border-gray-300 rounded-lg cursor-pointer' onClick={handleSideBar}>
+                     <span className='h-1 w-4 mx-1 font-medium text-xs p-2 border bg-white border-gray-300 rounded-lg cursor-pointer' onClick={handleSideBar}>
                                      Add widget <GoPlus className='inline'/>
                     </span>
                     <span className='h-1 w-4 p-2 mx-1 border bg-white border-gray-200 rounded-lg'>
-                        <TbRefresh className='inline  rotate-45 text-sm'/>
+                        <TbRefresh className='inline  rotate-45 text-xs'/>
                     </span>
                     <span className='h-1 w-4 p-2 mx-1 border bg-white border-gray-200 rounded-lg'>
-                        <BsThreeDotsVertical className='inline text-sm'/>
+                        <BsThreeDotsVertical className='inline text-xs'/>
                     </span>
-                    <div className='border mx-2 border-primaryBlue text-primaryBlue text-sm inline-block p-1 rounded-sm'>
+                    <div className='border mx-2 border-primaryBlue text-primaryBlue text-xs inline-block p-1 rounded-sm'>
                         <span className='border-spacing-1 h-4 border-r-2 border-primaryBlue'>
                              <MdWatchLater className='inline mx-1'/>
                         </span>
