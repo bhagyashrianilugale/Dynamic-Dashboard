@@ -24,9 +24,9 @@ const Body = () => {
 
   return (
     <>
-      <div className='relative h-full w-full bg-slate-100 p-10'>
+      <div className='relative h-full w-full bg-backgroundBlue p-10'>
            <div className='flex justify-between py-4 text-darkGrey'>
-                <h1 className='text-sm font-bold'>CNAPP Dashboard</h1>
+                <h1 className='text-lg font-bold'>CNAPP Dashboard</h1>
                  <div className='text-center text-lightGreyBlue'>
                      <span className='h-1 w-4 mx-1 font-medium text-xs p-2 border bg-white border-gray-300 rounded-lg cursor-pointer' onClick={handleSideBar}>
                                      Add widget <GoPlus className='inline'/>

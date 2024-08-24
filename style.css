@@ -8,9 +8,19 @@ body{
     overflow-x: hidden;
 }
 
+/* Widget Container*/
+.widget_container{
+   background-color: white;
+   height: 28vh;
+   width: 55vh;
+   box-shadow: #7a7a7a;
+   margin: 5px;
+}
+
+
 @layer utilities {
     ::-webkit-scrollbar {
-        width: 4px;
+        width: 6px;
         background-color: #a3acbe;
     }
 }

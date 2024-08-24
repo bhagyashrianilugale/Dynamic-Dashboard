@@ -13,6 +13,9 @@ module.exports = {
         lightGreyBlue: '#67717f',
         headerBlue: '#14147d',
         buttonBlue: '#050f3c',
+        borderBlue: '#a3acbe',
+        backgroundBlue: '#f0f5fa',
+        widgetBackgraundWhite: '#f0f1f7'
       }
      },
   },

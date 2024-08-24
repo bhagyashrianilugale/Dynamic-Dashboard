@@ -92,7 +92,7 @@ const Sidebar = () => {
                             </div>
                     </section>
                     <div className='flex justify-end space-x-2 p-4 mt-auto font-medium'>
-                                  <button className='h-10 w-36 text-xs rounded-xl p-2 bg-white text-btncol border-2 border-btncol' 
+                                  <button className='h-10 w-36 text-xs rounded-xl px-2 bg-white text-btncol border-2 border-buttonBlue' 
                                           onClick={()=>dispatch(changeSideBarStatus())}>
                                           Cancel
                                   </button>
