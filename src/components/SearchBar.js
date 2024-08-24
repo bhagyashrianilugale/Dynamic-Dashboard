@@ -16,7 +16,7 @@ const SearchBar =() =>{
   }
   return (
     <>
-      <div className='text-slate-200 inline h-20 text-center w-6/12 p-4'>
+      <div className='text-slate-200 inline h-16 text-center w-6/12 p-4'>
                    <FaSearch className='absolute left-[38%] top-6 text-gray-400'/>
                    <input
                     type='text'

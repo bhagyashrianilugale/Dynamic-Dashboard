@@ -17,6 +17,7 @@ const Body = () => {
   const sidebarStatus = useSelector((store)=>store.widgets.sidebarStatus);
   const dispatch = useDispatch();
   
+  // Function to toggle sidebar visibility
   const handleSideBar = () => {
         dispatch(changeSideBarStatus());
   };
