@@ -9,14 +9,24 @@ body{
 }
 
 /* Widget Container*/
+
 .widget_container{
-   background-color: white;
-   height: 28vh;
-   width: 55vh;
-   box-shadow: #7a7a7a;
-   margin: 5px;
+    width: 66vh;
+    height: 36vh;
+    margin: 0px 1px;
 }
 
+.widget{
+   background-color: white;
+   height: 30vh;
+   width: 60vh;
+   box-shadow: #7a7a7a;
+}
+/* .widget img{
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+} */
 
 @layer utilities {
     ::-webkit-scrollbar {

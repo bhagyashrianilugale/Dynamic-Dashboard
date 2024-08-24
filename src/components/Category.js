@@ -12,8 +12,8 @@ const Category = ({props}) => {
   
   return (
     <>
-      <div>
-            <h1 className='text-lg font-bold mx-4 z-10 text-darkGrey'>{ categoryName }</h1>
+      <div className='mt-0'>
+            <h1 className='text-sm font-bold mx-4 text-darkGrey'>{ categoryName }</h1>
             <div className='flex w-full'>
 
                {/*Widget Container*/}
@@ -29,8 +29,8 @@ const Category = ({props}) => {
               </div>
 
               {/*Empty Widget Container*/}
-              <div className='p-3 bg-widgetBackgraundWhite rounded-2xl shadow-sm' onClick={()=>dispatch(changeSideBarStatus())}>
-              <div className='widget_container rounded-xl flex items-center justify-center bg-white'>
+              <div className='p-3 bg-widgetBackgraundWhite rounded-2xl shadow-sm widget_container' onClick={()=>dispatch(changeSideBarStatus())}>
+              <div className='widget rounded-xl flex items-center justify-center bg-white'>
                      <span className='h-8 w-30 text-xs font-medium p-2 border bg-white border-gray-300 rounded-lg opacity-60 cursor-pointer'>
                           <GoPlus className='inline'/> Add widget
                     </span>
