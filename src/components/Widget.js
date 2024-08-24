@@ -11,8 +11,9 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
 
   return (
     <>
-      <div className='p-8 bg-widgetBackgraundWhite rounded-2xl z-40 shadow-sm widget_container 
-                      flex justify-center items-center flex-col'>
+      <div className='relative'>
+      <div className='p-8 bg-widgetBackgraundWhite rounded-2xl z-1 shadow-sm widget_container 
+                      flex justify-center items-center flex-col' >
           <div className='widget rounded-xl'>
                {searchText?.length > 1 
                    ? null 
@@ -31,6 +32,7 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
                        <p className='text-sm text-center  from-neutral-200'>No Graph data available!</p>
                </div>
           </div>
+         </div>
        </div>
      </>
   )

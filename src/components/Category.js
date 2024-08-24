@@ -12,15 +12,15 @@ const Category = ({props}) => {
   
   return (
     <>
-      <div> 
-            <div className='sticky'>
-                <h1 className='text-sm font-bold mx-4 z-50 text-darkGrey'>{ categoryName }</h1>
+      <div className='relative'> 
+            <div>
+                <h1 className='text-sm font-bold mx-4 -top-2 text-darkGrey absolute z-20'>{ categoryName }</h1>
             </div>
-            <div className='flex w-full'>
+            <div className='flex flex-wrap'>
 
                {/*Widget Container*/}
-               <div className='flex flex-nowrap'>
-                   { widgetInfo.slice(0,2).map((widget)=>(
+               <div className='flex flex-wrap'>
+                   { widgetInfo.map((widget)=>(
                     <Widget 
                      key={ widget.name } 
                      widgetName={ widget.name} 

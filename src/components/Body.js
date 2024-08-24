@@ -31,13 +31,13 @@ const Body = () => {
                      <span className='h-1 w-4 mx-1 font-medium text-xs p-2 border bg-white border-gray-300 rounded-lg cursor-pointer' onClick={handleSideBar}>
                                      Add widget <GoPlus className='inline my-4'/>
                     </span>
-                    <span className='h-0.2 w-4 p-2 mx-1 border bg-white border-gray-200 rounded-lg'>
+                    <span className='h-1 w-4 py-1 px-2 mx-1 border bg-white border-gray-200 rounded-lg'>
                         <TbRefresh className='inline  rotate-45 text-xs'/>
                     </span>
-                    <span className='h-0.5 w-4 p-2 mx-1 border bg-white border-gray-200 rounded-lg'>
+                    <span className='h-1 w-4 py-1 px-2  border bg-white border-gray-200 rounded-lg'>
                         <BsThreeDotsVertical className='inline text-sm'/>
                     </span>
-                    <div className='border mx-2 border-primaryBlue text-primaryBlue text-xs inline-block p-1 rounded-sm'>
+                    <div className='border mx-4 border-primaryBlue text-primaryBlue text-xs inline-block p-1 rounded-sm'>
                         <span className='border-spacing-1 h-4 border-r-2 border-primaryBlue'>
                              <MdWatchLater className='inline mx-1'/>
                         </span>
