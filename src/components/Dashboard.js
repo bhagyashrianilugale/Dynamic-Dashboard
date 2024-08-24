@@ -9,7 +9,6 @@ const Dashboard = () => {
   const categories = useSelector((store) => store.widgets.categories);
   const filterwidget = useSelector((store) => store.widgets.filterwidget);
   const searchText = useSelector((store)=>store.widgets.searchText);
-  console.log(searchText);
 
   return (
     <>
