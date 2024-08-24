@@ -11,7 +11,7 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
 
   return (
     <>
-      <div
+          <div
               className='p-5 rounded-xl text-darkGrey border'>
                <div 
                 className='h-60 w-4/15 m-auto rounded-xl bg-red-500'>
