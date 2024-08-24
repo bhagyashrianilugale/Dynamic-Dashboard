@@ -17,9 +17,8 @@ const Category = ({props}) => {
                 <h1 className='text-sm font-bold mx-4 -top-2 text-darkGrey absolute z-20'>{ categoryName }</h1>
             </div>
             <div className='flex flex-wrap'>
-
                {/*Widget Container*/}
-               <div className='flex flex-wrap'>
+               <div className='flex'>
                    { widgetInfo.map((widget)=>(
                     <Widget 
                      key={ widget.name } 
