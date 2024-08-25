@@ -21,7 +21,6 @@ body{
    height: 30vh;
    width: 58vh;
    box-shadow: #7a7a7a;
-   margin-right: 5px;
 }
 
 @layer utilities {
