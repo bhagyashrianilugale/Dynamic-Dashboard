@@ -24,7 +24,7 @@ const Body = () => {
 
   return (
     <>
-      <div className='relative h-full w-full bg-backgroundBlue p-10'>
+      <div className='relative h-full w-full bg-backgroundBlue p-8'>
            <div className='flex justify-between py-4 text-darkGrey'>
                 <h1 className='text-lg font-bold'>CNAPP Dashboard</h1>
                  <div className='text-center text-lightGreyBlue'>
