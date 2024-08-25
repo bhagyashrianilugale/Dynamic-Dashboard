@@ -11,9 +11,9 @@ body{
 /* Widget Container*/
 
 .widget_container{
-    width: 63vh;
+    width: 62vh;
     height: 36vh;
-    margin: 3px 2px;
+    margin: 3px 1px;
 }
 
 .widget{
