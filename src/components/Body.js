@@ -19,6 +19,9 @@ const Body = () => {
   // Selecting filteredwidget from the Redux store
   const filteredwidget = useSelector((store) => store.widgets.filteredwidget);
 
+  // Selecting searchText from the Redux store
+  const searchText = useSelector((store)=>store.widgets.searchText);
+  
   const dispatch = useDispatch();
   
   // Function to toggle sidebar visibility
@@ -29,7 +32,8 @@ const Body = () => {
   return (
     <>
       <div className='relative bg-backgroundBlue p-8'>
-           
+           { (searchText?.length>1 && filteredwidget.length == 0) 
+                      ? <p className='text-center text-darkGrey font-medium'>Widgets not found </p> : null}
            <div className='flex justify-between py-4 text-darkGrey'>
                 <h1 className='text-lg font-bold'>CNAPP Dashboard</h1>
                  <div className='text-center text-lightGreyBlue'>
