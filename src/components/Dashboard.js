@@ -13,6 +13,7 @@ const Dashboard = () => {
      
   // Selecting searchText from the Redux store
   const searchText = useSelector((store)=>store.widgets.searchText);
+  
 
   return (
     <> 

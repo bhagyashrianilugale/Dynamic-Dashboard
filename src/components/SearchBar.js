@@ -8,14 +8,13 @@ const SearchBar =() =>{
   const dispatch = useDispatch();
   const [ searchText, setSearchText] = useState("");
 
-  const handleSearch = (e)=>{
-        setSearchText(e.target.value);
+ 
 
-        // Dispatch action to filter widgets
-        if(searchText.length){
+    // Dispatch action to filter widgets
+    if(searchText.length){
             dispatch(filteredwidgets(searchText));
-        }
-  }
+    }
+
   return (
     <>
       {/*earch bar container */}
@@ -26,7 +25,7 @@ const SearchBar =() =>{
                     placeholder='Search anything...'
                     className= 'border w-6/12 h-8 mx-16 text-xs text-start px-10 text-black bg-slate-100 border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400'
                     value= {searchText}
-                    onChange={handleSearch}
+                    onChange={(e)=> setSearchText(e.target.value)}
                 />
       </div>
     </>

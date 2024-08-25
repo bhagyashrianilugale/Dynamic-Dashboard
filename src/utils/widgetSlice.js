@@ -54,12 +54,13 @@ const widgetSlice = createSlice({
         },
 
         filteredwidgets : (state, action)=>{
-            const searchTerm = action.payload.toLowerCase();
-            if( searchTerm.length>0 ){
+            const searchTerm = action.payload.toLowerCase().trim();
+            console.log(searchTerm);
+            if( searchTerm.length >0 ){
                        state.searchText = searchTerm;
                       //Filterd widget
                        state.filteredwidget = state.categories?.flatMap((category)=>(
-                       category.widgets.filter((widget)=>widget.name.toLowerCase().includes(searchTerm))
+                       category.widgets.filter((widget)=>widget.name.toLowerCase().startsWith(searchTerm))
             ))}else{
                  state.searchText.length=0;
             }

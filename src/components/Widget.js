@@ -16,7 +16,7 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
       <div className='p-8 bg-widgetBackgraundWhite rounded-2xl z-1 shadow-sm widget_container 
                       flex justify-center items-center flex-col' >
           <div 
-          className={`widget rounded-xl ${searchText?.length > 1 ? 'p-4' : ''}`}>
+          className={`widget rounded-xl ${searchText?.length > 1 ? 'p-4 mx-6' : ''}`}>
                {searchText?.length > 1 
                    ? null 
                    : <RxCross2 
