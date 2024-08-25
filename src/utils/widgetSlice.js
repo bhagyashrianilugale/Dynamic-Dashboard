@@ -60,7 +60,7 @@ const widgetSlice = createSlice({
                        state.searchText = searchTerm;
                       //Filterd widget
                        state.filteredwidget = state.categories?.flatMap((category)=>(
-                       category.widgets.filter((widget)=>widget.name.toLowerCase().startsWith(searchTerm))
+                       category.widgets.filter((widget)=>widget.name.toLowerCase().includes(searchTerm))
             ))}else{
                  state.searchText.length=0;
             }

@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import { FaSearch } from "react-icons/fa";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { filteredwidgets } from '../utils/widgetSlice';
 
 const SearchBar =() =>{
 
   const dispatch = useDispatch();
+
   const [ searchText, setSearchText] = useState("");
-
- 
-
-    // Dispatch action to filter widgets
-    if(searchText.length){
+   
+   // Dispatch action to filter widgets
+  if(searchText.length){
             dispatch(filteredwidgets(searchText));
     }
 
@@ -19,7 +18,7 @@ const SearchBar =() =>{
     <>
       {/*earch bar container */}
       <div className='text-slate-200 inline h-16 text-center w-6/12 p-2'>
-                   <FaSearch className='absolute left-[42%] h-3 top-5 text-gray-400'/>
+                   <FaSearch className='absolute left-[41%] h-3 top-5 text-gray-400'/>
                    <input
                     type='text'
                     placeholder='Search anything...'
@@ -27,7 +26,9 @@ const SearchBar =() =>{
                     value= {searchText}
                     onChange={(e)=> setSearchText(e.target.value)}
                 />
+                
       </div>
+
     </>
   )
 }

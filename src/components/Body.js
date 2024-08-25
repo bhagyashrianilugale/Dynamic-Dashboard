@@ -15,6 +15,10 @@ const Body = () => {
 
   // Subscribing to the store using a selector
   const sidebarStatus = useSelector((store)=>store.widgets.sidebarStatus);
+
+  // Selecting filteredwidget from the Redux store
+  const filteredwidget = useSelector((store) => store.widgets.filteredwidget);
+
   const dispatch = useDispatch();
   
   // Function to toggle sidebar visibility
@@ -25,6 +29,7 @@ const Body = () => {
   return (
     <>
       <div className='relative bg-backgroundBlue p-8'>
+           
            <div className='flex justify-between py-4 text-darkGrey'>
                 <h1 className='text-lg font-bold'>CNAPP Dashboard</h1>
                  <div className='text-center text-lightGreyBlue'>

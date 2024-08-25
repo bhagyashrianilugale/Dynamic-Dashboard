@@ -6,8 +6,12 @@ import  graphImg  from '../assets/graphImg.jpg';
 
 const Widget = ({ widgetName, widgetText, categoryName }) => {
  
-   // Selecting searchText from the Redux store
-  const searchText = useSelector((store) => store.widgets.searchText);
+  // Selecting filteredwidget from the Redux store
+  const filteredwidget = useSelector((store) => store.widgets.filteredwidget);
+     
+  // Selecting searchText from the Redux store
+  const searchText = useSelector((store)=>store.widgets.searchText);
+
   const dispatch = useDispatch();
 
   return (
@@ -16,8 +20,8 @@ const Widget = ({ widgetName, widgetText, categoryName }) => {
       <div className='p-8 bg-widgetBackgraundWhite rounded-2xl z-1 shadow-sm widget_container 
                       flex justify-center items-center flex-col' >
           <div 
-          className={`widget rounded-xl ${searchText?.length > 1 ? 'p-4 mx-6' : ''}`}>
-               {searchText?.length > 1 
+          className={`widget rounded-xl ${((searchText?.length > 1 )&&(filteredwidget?.length > 0))? 'p-4 mx-6' : ''}`}>
+               {((searchText?.length > 1 )&&(filteredwidget?.length > 0))
                    ? null 
                    : <RxCross2 
                      className='text-xl ml-[92%] pt-2 font-extrabold cursor-pointer'
