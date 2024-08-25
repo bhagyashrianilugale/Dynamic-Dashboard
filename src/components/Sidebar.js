@@ -26,6 +26,7 @@ const Sidebar = () => {
                dispatch(addWidget(widgetInfo));
                widget_name.current.value =''; 
                widget_text.current.value ='';
+               setError('');
            } catch(err){
               setError(err.message);
            }
