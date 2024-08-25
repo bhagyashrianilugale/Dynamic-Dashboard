@@ -8,7 +8,7 @@ const widgetSlice = createSlice({
               category: 'CSPM',
               widgets: [
                   { name: "Cloud Accounts", text: "Details about cloud accounts"},
-                  { name: "Cloud Account Risk Assesment", text: "Assessment of cloud account risks"}
+                  { name: "Cloud Account Risk Assessment", text: "Assessment of cloud account risks"}
               ]
              },
              {
