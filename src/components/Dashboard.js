@@ -20,11 +20,11 @@ const Dashboard = () => {
       {(searchText?.length > 1 && filteredwidget?.length > 0)
             ? <div className='flex flex-wrap'>{
                     filteredwidget?.map((widget)=>(
-                                <div className='mx-2'><Widget 
+                                <Widget 
                                   key={ widget.name } 
                                   widgetName={ widget.name} 
                                   widgetText={ widget.text }
-                                  /></div>
+                                  />
                       )) 
                   } 
             </div>

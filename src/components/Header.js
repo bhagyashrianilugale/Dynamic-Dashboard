@@ -15,7 +15,7 @@ const Header = () => {
               <span className='font-bold text-secondaryBlue'>Dashboard V2</span>
            </div>
            <SearchBar />
-           <div className='flex text-xl fond-bold text-slate-400'>
+           <div className='flex text-2xl fond-bold text-slate-400'>
               <IoIosArrowDown className='m-5 p-1 text-black'/>
               <LuBellRing className='m-5 p-1'/>
               <CgProfile className='mx-4 my-5 p-1'/>

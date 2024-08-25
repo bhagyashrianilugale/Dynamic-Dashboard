@@ -6,6 +6,7 @@ body{
     cursor: pointer;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #f0f5fa;
 }
 
 /* Widget Container*/
@@ -22,6 +23,7 @@ body{
    width: 58vh;
    box-shadow: #7a7a7a;
 }
+
 
 @layer utilities {
     ::-webkit-scrollbar {
