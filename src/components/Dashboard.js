@@ -18,13 +18,13 @@ const Dashboard = () => {
     <> 
       {/*Conditional rendering for filteredwidget */}
       {(searchText?.length > 1 && filteredwidget?.length > 0)
-            ? <div>{
+            ? <div className='flex flex-wrap'>{
                     filteredwidget?.map((widget)=>(
-                                <Widget 
+                                <div className='mx-2'><Widget 
                                   key={ widget.name } 
                                   widgetName={ widget.name} 
                                   widgetText={ widget.text }
-                                  />
+                                  /></div>
                       )) 
                   } 
             </div>
